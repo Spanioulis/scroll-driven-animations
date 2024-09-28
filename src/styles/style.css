@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+@import '../styles/fonts.css';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -23,22 +25,21 @@ body {
   justify-content: center;
   /* background: white; */
   padding-top: 100vh;
-  font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-style: normal;
   gap: 1vmin;
 }
 
-
 h1 {
-  margin: 0;
+  font-family: "Fraunces", serif;
   font-size: 1.25em;
-  font-weight: 700;
   font-style: normal;
+  font-weight: 700;
+  margin: 0;
 }
 
 .progress-bar {
-  background: #347928;
+  background: linear-gradient(to right, #ffffff, #ff0000, #ffffff);
   width: 0;
   height: 1vmin;
   position: fixed;
@@ -89,10 +90,11 @@ h1 {
 }
 
 .s-content {
-  width: 80vw;
+  width: min(100% - 2em, 60VW);
   height: auto;
   padding: 5vmin;
   margin-top: 4rem;
+  font-family: "Gotham", sans-serif;
 }
 
 
